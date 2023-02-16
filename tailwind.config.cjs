@@ -51,7 +51,8 @@ module.exports = {
         '101percent': '101%',
         '400': '400px',
         '300': '300px',
-        '100vh': '100vh'
+        '100vh': '100vh',
+        '200': '200px'
       },
       dropShadow: {
         'h1-custom': '0 25px 25px rgb(16 153 215 / 28%)'

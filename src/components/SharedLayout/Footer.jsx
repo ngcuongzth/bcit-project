@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/images/logo.png'
 const Footer = () => {
     return (
-        <footer className=' mt-4 px-4 py-2'>
-            <div className=' gap-4 pb-2 laptop-low:flex'>
+        <footer className=' mt-4 py-2'>
+            <div className=' gap-4 pb-2 laptop-low:flex px-4'>
                 <div className="laptop-low:w-4/12">
                     <article className='flex flex-col gap-1'>
                         <Link to="/">
@@ -43,7 +43,7 @@ const Footer = () => {
                     })}
                 </div>
             </div>
-            <div className='flex justify-center px-4 py-2 bg-gray-700 text-white text-14px font-medium'>
+            <div className='flex justify-center py-2 bg-gray-700 text-white text-14px font-medium'>
                 Copyright &copy;2023 IT-BCIT
             </div>
         </footer>

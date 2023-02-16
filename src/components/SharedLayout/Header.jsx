@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { PhoneIcon, MailIcon, FacebookIcon } from '../../utils/svg';
 const Header = () => {
     return (
-        <header className='header-h max-w-1k2 mx-auto px-4 flex justify-between  mb-4 '>
-            <div className="h-full flex">
-                <Link to="/" className='h-full flex py-1'>
-                    <img src={logo} alt="bcit-logo" className='w-11/12' />
+        <header className='mobile:header-h max-w-1k2 mx-auto px-4 flex justify-between  mb-4 '>
+            <div className="h-full flex items-center">
+                <Link to="/" className='h-full flex py-1 items-center'>
+                    <img src={logo} alt="bcit-logo" className='h-16 ' />
                 </Link>
                 <div className="pl-4 flex flex-col justify-center">
                     <div className="border-b-2 pt-2">
