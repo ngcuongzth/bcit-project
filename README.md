@@ -1,0 +1,3 @@
+# swiper
+
+npm i swiper
