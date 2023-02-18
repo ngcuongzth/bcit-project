@@ -1,0 +1,82 @@
+@import "../GlobalStyles/index.scss";
+.my-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.my-input {
+  background-color: $layer-color;
+  border: 1px solid $layer-color;
+  margin-top: 5px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  @media screen and (min-width: 576px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+  &::placeholder {
+    font-weight: 300;
+  }
+  &:focus {
+    outline-color: $primary-color;
+  }
+}
+
+.my-label {
+  font-size: 12px;
+  color: #475569;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  @media screen and (min-width: 576px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+.my-button {
+  color: $layer-color;
+  border: 1px solid $layer-color;
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s line;
+  -moz-transition: all 0.3s line;
+  -ms-transition: all 0.3s line;
+  -o-transition: all 0.3s line;
+  & svg {
+    color: $layer-color;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s line;
+    -moz-transition: all 0.3s line;
+    -ms-transition: all 0.3s line;
+    -o-transition: all 0.3s line;
+  }
+  & span {
+    color: $layer-color;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s line;
+    -moz-transition: all 0.3s line;
+    -ms-transition: all 0.3s line;
+    -o-transition: all 0.3s line;
+  }
+  &:hover {
+    background-color: $layer-color;
+    border-color: $primary-color;
+  }
+  &:hover svg,
+  &:hover span {
+    color: $primary-color;
+  }
+}

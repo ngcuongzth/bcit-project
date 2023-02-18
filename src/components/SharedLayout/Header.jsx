@@ -7,7 +7,7 @@ const Header = () => {
         <header className='mobile:header-h max-w-1k2 mx-auto px-4 flex justify-between  mb-4 '>
             <div className="h-full flex items-center">
                 <Link to="/" className='h-full flex py-1 items-center'>
-                    <img src={logo} alt="bcit-logo" className='h-16 ' />
+                    <img src={logo} alt="bcit-logo" className='h-16 laptop-low:h-24' />
                 </Link>
                 <div className="pl-4 flex flex-col justify-center">
                     <div className="border-b-2 pt-2">
@@ -18,13 +18,13 @@ const Header = () => {
                 </div>
             </div>
             <div className='hidden laptop-low:block pt-2'>
-                <a className="flex items-center  gap-1" href="tel:0903214756">
+                <a className="flex items-center  gap-1" href="tel:0000.000.000">
                     <PhoneIcon />
-                    <span className='text-normal'>0903.214.756</span>
+                    <span className='text-normal'>0000.000.000</span>
                 </a>
-                <a className=" items-center flex gap-1" href="mailto:nguyencuongzth@gmail.com">
+                <a className=" items-center flex gap-1" href="mailto:contact@bcit.com">
                     <MailIcon />
-                    <span className='text-normal'>nguyencuongzth@gmail.com</span>
+                    <span className='text-normal'>contact@bcit.com</span>
                 </a>
                 <a className=" items-center flex gap-1" href="#">
                     <FacebookIcon />

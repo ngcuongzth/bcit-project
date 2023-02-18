@@ -7,6 +7,7 @@
 
 $text-1: #0f172a;
 $primary-color: #245d7b;
+$layer-color: #f2f2f2c0;
 $mobile: 576px;
 $tablet: 768px;
 $laptop-low: 992px;
@@ -26,6 +27,9 @@ $header-h: 120px;
 
   html {
     font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -85,5 +89,61 @@ $header-h: 120px;
   }
   .header-h {
     height: $header-h;
+  }
+  @keyframes fadeInVisible {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 16px;
+  color: $primary-color;
+  transition: all 0.2s linear;
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: $layer-color;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid $primary-color;
+  transition: all 0.2s linear;
+  &:hover {
+    border-color: coral;
+    &::after {
+      color: coral;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 25px;
+    height: 25px;
   }
 }

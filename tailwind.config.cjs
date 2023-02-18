@@ -23,7 +23,9 @@ module.exports = {
         '28px': '28px',
         '30px': '30px',
         '35px': '35px',
-        '40px': '40px'
+        '40px': '40px',
+        '60px': '60px',
+        '80px': '80px'
       },
       colors: {
         primary: '#245d7b',
@@ -52,14 +54,25 @@ module.exports = {
         '400': '400px',
         '300': '300px',
         '100vh': '100vh',
-        '200': '200px'
+        '200': '200px',
+        '100': '100px'
       },
       dropShadow: {
         'h1-custom': '0 25px 25px rgb(16 153 215 / 28%)'
       },
-
-
-
+      transitionTimingFunction: {
+        'linear': 'linear'
+      },
+      backgroundImage: {
+        'footer': 'url(./src/assets/images/slide-1.jpg)'
+      },
+      keyframes: {
+        fadeInVisible: {
+          '0%': { display: 'none', opacity: 0 },
+          '1%': { display: 'block', opacity: 0 },
+          '100%': { display: 'block', opacity: 1 }
+        }
+      }
     },
   },
   plugins: [],

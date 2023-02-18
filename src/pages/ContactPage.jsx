@@ -1,8 +1,12 @@
 import React from 'react'
+import FormQA from '../components/Contact/FormQA'
+
 
 const ContactPage = () => {
     return (
-        <div>ContactPage</div>
+        <main className='min-h-screen'>
+            <FormQA />
+        </main>
     )
 }
 

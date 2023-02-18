@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import 'swiper/css/scrollbar';
-import { news } from '../../../utils/const';
-import NewsItem from '../NewsItem';
-import './News.scss'
+import { news } from '../../utils/const';
+import NewsItem from './NewsItem';
+
 const Slider = () => {
 
     return (

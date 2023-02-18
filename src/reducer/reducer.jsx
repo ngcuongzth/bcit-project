@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR } from "../actions";
+import { TOGGLE_SIDEBAR, HANDLE_FORM_QA } from "../actions";
 const reducer = (state, action) => {
     switch (action.type) {
         case TOGGLE_SIDEBAR:
@@ -6,6 +6,10 @@ const reducer = (state, action) => {
                 return { ...state, isSidebarOpen: false }
             }
             return { ...state, isSidebarOpen: true }
+        case HANDLE_FORM_QA:
+            return {
+                ...state, contentQA: action.payload
+            }
         default:
             throw new Error(`Action ${action.type} is not matching`)
     }

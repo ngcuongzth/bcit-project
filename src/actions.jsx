@@ -1,2 +1,3 @@
 
 export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'
+export const HANDLE_FORM_QA = "HANDLE_FORM_QA"
